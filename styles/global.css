@@ -1,0 +1,14 @@
+:root {
+      /* Kashmiri Brand Palette */
+     --kesar:        #C8860A;
+     --off-white:    #d9eb9f;
+     --chinar:       #8B1A1A;
+      --gray-mid:    #9A8C7A;
+
+
+      /* Transitions */
+    --transition-fast: 150ms ease-out;
+
+     /* Typography */
+    --font-display: 'Cormorant Garamond', 'Palatino Linotype', Georgia, serif;
+}

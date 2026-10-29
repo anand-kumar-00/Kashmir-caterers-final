@@ -57,3 +57,68 @@
     letter-spacing: 0.04em;
     margin-top: 0.1rem;
 }
+
+/* ---- Primary Nav ---- */
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-link {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--walnut);
+    padding: 0.5rem 0;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    transition: color var(--transition-fast);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background: var(--kesar);
+    border-radius: 2px;
+    transition: width var(--transition-base);
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+    color: var(--chinar);
+}
+
+.nav-link:hover::after,
+.nav-link:focus-visible::after {
+    width: 100%;
+}
+
+.nav-link:focus-visible {
+    outline: 2px solid var(--kesar);
+    outline-offset: 4px;
+    border-radius: var(--radius-sm);
+}
+
+/* ---- Book Now CTA (always visible) ---- */
+.nav-cta {
+    background: var(--gradient-secondary);
+    color: var(--walnut) !important;
+    padding: 0.6rem 1.4rem !important;
+    border-radius: var(--radius-lg) !important;
+    font-weight: 700 !important;
+    min-height: 44px;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast) !important;
+    border: 2px solid var(--kesar);
+}
+
+.nav-cta::after { display: none !important; }
+
+.nav-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md) !important;
+    color: var(--walnut) !important;
+}
